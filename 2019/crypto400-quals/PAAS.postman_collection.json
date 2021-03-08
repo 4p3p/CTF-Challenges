@@ -1,0 +1,75 @@
+{
+	"info": {
+		"_postman_id": "67fe0464-c9c4-42c4-ba1c-ac56c238cb59",
+		"name": "PAAS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Hack",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"equipo\":\"The Handsomes\"}"
+				},
+				"url": {
+					"raw": "http://189.240.119.26:1337/Hack",
+					"protocol": "http",
+					"host": [
+						"189",
+						"240",
+						"119",
+						"26"
+					],
+					"port": "1337",
+					"path": [
+						"Hack"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Defender",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"ticket\":\"fr5-F54-SECeUchXoqztCdno55KV3DA-roDTaijYwZczHR-Dz-ZSd3dNYSzYj5YO94DXHu5OBpJNQThoDQf2JQ==\"}"
+				},
+				"url": {
+					"raw": "http://189.240.119.26:1337/Defender",
+					"protocol": "http",
+					"host": [
+						"189",
+						"240",
+						"119",
+						"26"
+					],
+					"port": "1337",
+					"path": [
+						"Defender"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

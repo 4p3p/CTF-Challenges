@@ -1,0 +1,9 @@
+Instrucciones
+
+* Copiar todos los archivos a una carpeta, y ejecutar el script dock.bash
+* El script verifica que no falte ningun archivo dentro de la carpeta y ejecuta el archivo Dockerfile para generar la imagen
+* El archivo Dockerfile, instala las dependencias y especifica el script a ejecutar, en este caso b64.py, que será ejecutado por python3
+
+Una vez generada la imagen, puede ser montada a un contenedor con el comando comentado al final del script dock.bash 
+
+docker run -d -p 3101:3101 b64

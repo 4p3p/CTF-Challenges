@@ -1,0 +1,10 @@
+Instrucciones
+
+* Copiar todos los archivos de la carpeta Dockerfiles a una carpeta nueva y ejecutar el script dock.bash
+* El script verifica que no falte ningun archivo dentro de la carpeta y ejecuta el archivo Dockerfile para generar la imagen
+* El archivo Dockerfile, instala las dependencias y especifica el script a ejecutar, en este caso flipper.py, que será ejecutado por python3
+* Todas las dependencias son resueltas al momento de crear el docker. Se intento emular el entorno de desarrollo orginal.
+
+Una vez generada la imagen, puede ser montada a un contenedor con el comando comentado al final del script dock.bash 
+
+docker run -d -p 3102:3102 flipper
